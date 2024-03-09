@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="views.View">
+   <top>
+      <BorderPane style="-fx-background-color: #000;" BorderPane.alignment="CENTER">
+         <center>
+            <Label style="-fx-text-fill: #fff;" text="Location de voitures et prévisions météo" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+         </center>
+      </BorderPane>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #ddd;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Prévision météo" HBox.hgrow="NEVER" />
+            <TextField fx:id="textFieldPrevisionMeteo" editable="false" HBox.hgrow="ALWAYS" />
+            <Button defaultButton="true" mnemonicParsing="false" onAction="#actionRafraichirPrevisionMeteo" text="Rafraîchir" HBox.hgrow="NEVER" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <GridPane hgap="10.0" style="-fx-background-color: #eee;" vgap="10.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" percentWidth="50.0" />
+          <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" percentWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints fillHeight="false" valignment="BOTTOM" vgrow="NEVER" />
+          <RowConstraints maxHeight="1.7976931348623157E308" valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints fillHeight="false" valignment="CENTER" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Label text="Voitures disponibles" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+            <Label text="Mes voitures louées" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+            <Button mnemonicParsing="false" onAction="#actionLouerVoiture" text="Louer cette voiture  =&gt;&gt;" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+            <Button mnemonicParsing="false" onAction="#actionRestituerVoiture" text="&lt;&lt;= Restituer cette voiture" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+            <ListView fx:id="listViewVoituresDisponibles" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <ListView fx:id="listViewVoituresLouees" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+   </center>
+</BorderPane>
