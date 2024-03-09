@@ -9,3 +9,6 @@ Voici les étapes réalisées par l'application :
 - L'archive Zip est décompressée dans le même répertoire où se trouve l'archive
 - Les fichiers et répertoires extraits sont renommés sans le numéro à 32 caractères
 - Le contenu des fichiers est également modifiés pour que les liens soient fonctionnels
+
+## Téléchargement
+Vous pouvez récupérer le Jar Notion Cleaner se trouvant dans le répertoire [dist](https://github.com/ramalhom/NotionCleaner/tree/main/dist). Il a été déployer avec la version du JDK 17 sous Windows.
