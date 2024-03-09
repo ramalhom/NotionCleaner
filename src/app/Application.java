@@ -4,15 +4,11 @@ import ctrl.Controller;
 
 public class Application {
 
-    public final static String UTILISATEUR_COMPTE = "23d3-12ad-58ea-44d1";
-    public final static String UTILISATEUR_USER = "emf";
-    public final static String UTILISATEUR_MDP = "emf123";
-
     /**
-     * Modèle d'application "MVC" pour 226A et suivants, avec interfaces et ihm
-     * JavaFX.
+     * Application Notion Cleaner v1.0
      *
-     * @author EMF-Informatique
+     * @author Ramalho Mario
+     * @version 1.0
      */
     public static void main(String[] args) {
         new Controller().start();
