@@ -3,6 +3,8 @@
 C'est une application JavaFX qui permet de nettoyer les archives ZIP de Notion.
 Lorsque vous utilisez l'exportation HTML ou Markdown de Notion, il se trouve que Notion ajoute un numéro de 32 caractères à chaque document html ou répertoire. Si vous devez le stocker dans une arborescence Windows, ce sera souvent problématique car le chemin d'accès ne doit pas être trop long.
 
+![Capture](images/capture.png)
+
 ## Comment l'utiliser ?
 Déposer tout simplement votre document zip en réalisant un glisser / déposer. 
 Voici les étapes réalisées par l'application :
